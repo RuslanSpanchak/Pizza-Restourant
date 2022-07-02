@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div class="pay">
+
+		<header>
+			
+			<img src="./img/1i.png" class="icon">
+			<div class="bank">PizzaBank</div>
+
+			<nav class="nav">
+				
+				<div class="nav_item">Про компанію</div>
+
+				<div class="nav_item">Мій кабінет</div>
+
+				<div class="nav_item">Збереження</div>
+
+				<div class="nav_item">Кредити</div>
+
+				<div class="nav_item">Інше</div>
+
+			</nav>
+
+			<div class="basket">
+
+				<img src="./img/2i.png" class="icon1">
+				<div>1</div>
+
+			</div>
+
+		</header>
+		
+		<div class="oplata">Оплата замовлення</div>
+
+		<div class="zamovlenia">
+
+			<div class="left">
+				
+				<div class="number">Замовлення №27888</div>
+
+				<div class="name">
+					
+					<div class="user_name">Введіть ім'я</div>
+					<input type="text" class="input_name" name="">
+
+				</div>
+
+				<div class="before">До сплати</div>
+				<div class="price" id="price"></div>
+
+				<div class="time">Ваше замовлення може бути сплачено протягом 30 хвилин</div>
+
+			</div>
+
+			<div class="right">
+				
+				<div>
+					<div class="order">Order 27888</div>
+
+					<div class="price" id="price"></div>
+
+					<div class="apple_pay"><img src="./img/3i.png" class="icon2"><span class="pay_apple">Pay</span></div>
+
+					<div class="time_right">Або скористайтеся іншим методом</div>
+
+					<div class="card"><img src="./img/4i.png" class="icon3">Платіжна карта<div class="icon_card"><img src="./img/11i.png" class="icon6" id="visa"><img src="./img/12i.png" class="icon6" id="maestro"><div class="icon6">+2</div></div></div>
+
+					<div class="card" id="ibox"><img src="./img/5i.png" class="icon3">Готівка в iBox</div>
+
+
+					<div class="card" id="pashalka_2"><img src="./img/6i.png" class="icon3">Квитанція</div>
+
+					<div class="powered">Powered by <span class="surname">Spanchak</span></div>
+
+				</div>
+				
+			</div>
+
+		</div>
+
+		<footer>
+			
+			<div class="cards">
+				<div class="cards_item"><img src="./img/7i.png" class="icon4"></div>
+
+				<div class="cards_item"><img src="./img/8i.png" class="icon4"></div>
+			</div>
+
+			<nav class="nav_footer">
+				
+				<div class="nav_item_footer">Умови використання</div>
+
+				<div class="nav_item_footer">Контакти</div>
+
+				<img src="./img/9i.png" class="icon5">
+
+				<img src="./img/10i.png" class="icon5">
+
+			</nav>
+
+		</footer>
+
+	</div>
+
+	<div class="plate">
+		
+		<div class="left_complete">
+
+			<div class="circule" id="circule">
+				
+				<div class="row_vertical">
+					
+					<div class="item_1 Ptop">Крути <br>скоріш <br>барабан !</div>
+
+				</div>
+
+				<div class="row_center">
+						
+					<div class="item_1 Pleft">Крути <br>скоріш <br>барабан !</div>
+					<div class="item_1 Pright">Крути <br>скоріш <br>барабан !</div>
+
+				</div>
+
+				<div class="row_vertical">
+					
+					<div class="item_1 Pbottom">Крути <br>скоріш <br>барабан !</div>
+
+				</div>
+
+			</div>
+
+			<div class="right_complete">
+				
+				<div class="complete_title">Pizza Drum</div>
+				<div class="discribe">Прокрутіть барабан щоб побачити готову піцу</div>
+
+				<div class="dishName" id="dishName"></div>
+				<div class="dishWeight" id="dishWeight"></div>
+				<p class="dishText" id="dishText"></p>
+
+				<div class="pizaa_size">
+
+					<div class="pizza_size_item active" id="pizza_size_item_1">Маленька</div>
+
+					<div class="pizza_size_item" id="pizza_size_item_2">Середня</div>
+
+					<div class="pizza_size_item" id="pizza_size_item_3">Велика</div>
+
+				</div>
+
+				<div class="pizza_type">
+					
+					<div class="row_circule">
+
+						<div class="pizza_type_item active" id="pizza_type_item_1">Стандарт</div>
+
+						<div class="pizza_type_item" id="pizza_type_item_2">Тонка</div>
+
+					</div>	
+
+					<div class="row_circule">
+
+						<div class="pizza_type_item" id="pizza_type_item_3">Філадельфія</div>
+
+						<div class="pizza_type_item" id="pizza_type_item_4">Борт Хот-Дог</div>
+						
+					</div>
+
+				</div>
+
+				<div class="pizza_complete_btn">
+						
+					<div class="money_complete"></div>
+					<div class="buy" id="buy_1">Замовити</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="spin">
+			
+			<div class="spin_father">
+				
+				<div class="spin_text" id="spin">Прокрутити</div>
+
+			</div>
+
+			<div class="complete_btn_comeback" id="complete_btn_comeback">Піца конструктор</div>
+
+		</div>
+
+	</div>
+
+	<div class="draw">
+
+		<div class="draw_title">
+
+			<div class="draw_text">Вгадай слово, та отримай піцу <span class="draw_span">БЕЗКОШТОВНО</span></div>
+
+		</div>
+		
+		<div class="draw_top">
+			
+			<div class="draw_item draw_item_1">
+				
+				<div class="draw_item_text">Правила: тобі потрібно вгадати яке слово ми загадали, у тебе є 5 спроб, якщо ти впораєшся з загадкою, тоді ти отримаєш смачну піцу абсолютно - <span class="draw_item_span">БЕЗКОШТОВНО</span></div>
+
+			</div>
+
+			<div class="draw_item draw_item_2">
+				
+				<div class="draw_item_text_2">Підказка: найкраща академія програмування у світі )</div>
+
+				<div class="questions">?</div>
+
+			</div>
+
+			<div class="draw_item draw_item_3">
+				
+				<div class="draw_item_text_3">Спроб залишилось: </div>
+
+				<div class="try" id="try"></div>
+
+				<div class="complete_btn_comeback_draw" id="complete_btn_comeback_draw">Піца конструктор</div>
+
+			</div>
+
+		</div>
+
+		<input type="text" class="input_draw" id="secret_word" name="">
+
+		<div class="draw_btn_save" id="draw_btn_save">Спробувати</div>
+
+		<div class="status" id="status"></div>
+
+	</div>
+
+	<div class="wrap">
+		
+		<div class="chooser">
+			
+			<h2 class="logo">Pizza Constructor</h2>
+
+			<p class="ingradients">Оберіть інградієнти</p>
+
+			<div class="choose" id="meet">М'ясо</div>
+
+			<div class="chooseOpen" id="chooseMeet">
+				
+				<div class="row">
+						
+					<div class="baconGroup">
+						
+						<div class="item bacon" id="bacon"></div>
+
+						<span>Бекон</span>
+
+					</div>
+
+					<div class="bayernkovbaskiGroup">
+						
+						<div class="item bayernkovbaski" id="bayernkovbaski"></div>
+
+						<span>Ковбаски</span>
+
+					</div>
+
+					<div class="chickenGroup">
+						
+						<div class="item chicken" id="chicken"></div>
+
+						<span>Курка</span>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					
+					
+
+					<div class="humGroup">
+						
+						<div class="item hum" id="hum"></div>
+
+						<span>Шинка</span>
+
+					</div>
+
+					
+
+				</div>
+
+			</div>
+
+			<div class="choose" id="vegetable">Овочі</div>
+
+			<div class="chooseOpen" id="chooseVegetable">
+				
+				<div class="row">
+					
+					<div class="kornGroup">
+						
+						<div class="item korn" id="korn"></div>
+
+						<span>Кукурудза</span>
+
+					</div>
+
+					<div class="mushroomsGroup">
+						
+						<div class="item mushrooms" id="mushrooms"></div>
+
+						<span>Гриби</span>
+
+					</div>
+
+					<div class="olivkiGroup">
+						
+						<div class="item olivki" id="olivki"></div>
+
+						<span>Оливки</span>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					
+					
+
+					<div class="cibulaGroup">
+						
+						<div class="item cibula" id="cibula"></div>
+
+						<span>Цибуля</span>
+
+					</div>
+
+					<div class="ananasGroup">
+						
+						<div class="item ananas" id="ananas"></div>
+
+						<span>Ананас</span>
+
+					</div>
+
+					
+
+				</div>
+
+			</div>
+
+			<div class="choose" id="cheese">Сир</div>
+
+			<div class="chooseOpen" id="chooseCheese">
+				
+				<div class="row">
+					
+					<div class="bergaderbluGroup">
+						
+						<div class="item bergaderblu" id="bergaderblu"></div>
+
+						<span>Бергадер Блю</span>
+
+					</div>
+
+					<div class="fetaGroup">
+						
+						<div class="item feta" id="feta"></div>
+
+						<span>Фета</span>
+
+					</div>
+
+					<div class="parmezanGroup">
+						
+						<div class="item parmezan" id="parmezan"></div>
+
+						<span>Пармезан</span>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					
+					
+
+					<div class="mozzarelaGroup">
+						
+						<div class="item mozzarela" id="mozzarela"></div>
+
+						<span>Моцарела</span>
+
+					</div>
+
+					<div class="chederGroup">
+						
+						<div class="item cheder" id="cheder"></div>
+
+						<span>Чедер</span>
+
+					</div>
+
+				</div>
+
+				
+
+			</div>
+
+			<div class="choose" id="souse">Соуси</div>
+
+			<div class="chooseOpen" id="chooseSouse">
+				
+				<div class="row">
+					
+					<div class="alfredoGroup">
+						
+						<div class="item alfredo" id="alfredo"></div>
+
+						<span>Альфредо</span>
+
+					</div>
+
+					<div class="bbqGroup">
+						
+						<div class="item bbq" id="bbq"></div>
+
+						<span>Барбекю</span>
+
+					</div>
+
+					<div class="dominosGroup">
+						
+						<div class="item dominos" id="dominos"></div>
+
+						<span>Домінос</span>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					
+					
+
+					<div class="chasnykoviyGroup">
+						
+						<div class="item chasnykoviy" id="chasnykoviy"></div>
+
+						<span>Часниковий</span>
+
+					</div>
+
+				</div>
+
+				
+
+			</div>
+
+			<div class="choose" id="add">Додаткові опції</div>
+
+			<div class="chooseOpen" id="chooseAdd">
+				
+				<div class="row">
+					
+					<div class="pashalkaGroup">
+						
+						<div class="item pashalka" id="pashalka"></div>
+
+						<span>Хороший Настрій !)</span>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="pizza">
+			
+			<div class="row">
+				
+				<div class="item1 chasnykoviy" id="chasnykoviyHide"></div>
+
+				<div class="item1 dominos" id="dominosHide"></div>
+
+				<div class="item1 bbq" id="bbqHide"></div>
+
+				<div class="item1 alfredo" id="alfredoHide"></div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="item1 cheder" id="chederHide"></div>
+
+				<div class="item1 mozzarela" id="mozzarelaHide"></div>
+
+				<div class="item1 parmezan" id="parmezanHide"></div>
+
+				<div class="item1 feta" id="fetaHide"></div>
+
+				<div class="item1 bergaderblu" id="bergaderbluHide"></div>
+
+			</div>
+
+			<div class="row">
+				
+				<div class="item1 ananas" id="ananasHide"></div>
+
+				<div class="item1 cibula" id="cibulaHide"></div>
+
+				<div class="item1 olivki" id="olivkiHide"></div>
+
+				<div class="item1 mushrooms" id="mushroomsHide"></div>
+
+				<div class="item1 korn" id="kornHide"></div>
+
+			</div>
+			
+			<div class="row">
+
+				<div class="item1 hum" id="humHide"></div>
+
+				<div class="item1 chicken" id="chickenHide"></div>
+
+				<div class="item1 bayernkovbaski" id="bayernkovbaskiHide"></div>
+
+				<div class="item1 bacon" id="baconHide"></div>
+
+			</div>
+
+		</div>
+
+		<div class="button">
+			
+			<div class="button_item">
+
+				<div class="money"></div>
+				<div class="buy" id="buy">Замовити</div>
+
+			</div>
+
+			<div class="complete">
+				
+				<div class="complete_btn" id="complete_btn">Готові піци</div>
+
+			</div>
+
+			<div class="draw_btn">
+				
+				<div class="rozigrash" id="rozigrash">Розіграш</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

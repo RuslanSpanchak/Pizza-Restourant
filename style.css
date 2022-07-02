@@ -1,0 +1,1205 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	background-color: #333;
+}
+
+.wrap {
+	width: 100%;
+	height: 90vh;
+	overflow: auto;
+
+	display: flex;
+	justify-content: space-around;
+
+	padding: 25px 0px;
+
+	color: #fff;
+	background-color: #333;
+	
+}
+
+.choose {
+	width: 250px;
+	height: 25px;
+
+	text-align: left;
+	font-family: monospace;
+	font-size: 25px;
+
+	border-bottom: 1px solid grey;
+	border-radius: 15px;
+
+	padding: 20px 10px;
+	margin: 15px 0px;
+
+	transition: .1s linear;
+	cursor: pointer;
+}
+
+.choose:hover {
+	background-color: grey;
+}
+
+.chooseopen {
+	width: 250px;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	width: 80px;
+	height: 80px;
+
+	border: 1px solid #333;
+	border-radius: 5px;
+
+	margin: 15px;
+}
+
+.item1 {
+	width: 80px;
+	height: 80px;
+
+	border: 1px solid #333;
+	border-radius: 5px;
+
+	margin: 10px;
+}
+
+.row {
+	display: flex;
+	text-align: center;
+}
+
+div {
+	/*text-align: center;*/
+}
+
+.logo {
+	font-size: 50px;
+	margin-bottom: -25px;
+	margin-top: -5px;
+}
+
+.ingradients {
+	font-size: 30px;
+	color: lightgrey;
+}
+
+span {
+	font-size: 20px;
+}
+
+.pizza {
+	width: 600px;
+	height: 600px;
+
+	background-image: url(./img/pizza_contur.png);
+	background-size: cover;
+	background-color: whitesmoke;
+
+	border: 1px solid #000;
+	box-shadow: 0 5px 20px #000;
+	border-radius: 50%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 55px;
+}
+
+.button {
+	width: 100px;
+	height: 50px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-right: 50px;
+}
+
+.button_item {
+	display: flex;
+}
+
+.money {
+	background-color: darkred;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-right: 1px solid #333;
+	box-shadow: 0 1px 10px #000;
+
+	padding: 10px 25px;
+
+	font-size: 25px;
+}
+
+.buy {
+	background-color: darkred;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: 0 1px 10px #000;
+
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-right: 25px;
+
+	font-size: 25px;
+
+	transition: .1s linear;
+	cursor: pointer;
+}
+
+.buy:hover {
+	background-color: red;
+}
+
+.pay {
+	width: 100%;
+	height: 100vh;
+
+	background-color: #333;
+	color: white;
+
+	display: none;
+}
+
+.oplata {
+	font-size: 35px;
+	font-weight: 900;
+	color: white;
+
+	padding-top: 25px;
+	margin-left: 250px;
+}
+
+.zamovlenia {
+	width: 100%;
+	height: 75vh;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.left {
+	width: 300px;
+	height: 200px;
+
+	border: 1px solid grey;
+	border-radius: 10px	;
+	box-shadow: 0px 1px 5px #000;
+
+	padding: 20px;
+	margin-top: 25px;
+	margin-left: 200px;
+}
+
+.number {
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.name {
+	margin-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+
+	border-bottom: 1px solid grey;
+}
+
+.user_name {
+	color: grey;
+	font-size: 20px;
+}
+
+.input_name {
+	background-color: #333;
+	border-bottom: 2px dotted grey;
+	border-radius: 5px;
+
+	margin-left: 10px;
+
+	color: white;
+
+	outline: none;
+}
+
+.before {
+	font-size: 25px;
+
+	margin-top: 15px;
+}
+
+.price {
+	font-size: 30px;
+	font-weight: 900;
+
+	margin-top: 15px;
+}
+
+.time {
+	color: grey;
+	font-size: 20px;
+
+	margin-top: 50px;
+	margin-left: -15px;
+}
+
+.right {
+	width: 650px;
+	height: 550px;
+
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 0px 1px 5px #000;
+
+	margin-right: 250px;
+	margin-top: -10px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.order {
+	font-size: 20px;
+	font-weight: 900;
+	margin-top: 25px;
+	margin-right: 200px;
+}
+
+.grn {
+	color: grey;
+	font-size: 25px;
+}
+
+.apple_pay {
+	width: 400px;
+	height: 50px;
+
+	background-color: whitesmoke;
+	border-radius: 10px;
+
+	margin-top: 25px;
+
+	color: grey;
+	font-size: 25px;
+	font-weight: 900;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.apple_pay:hover {
+	background-color: lightgrey;
+	color: #333;
+}
+
+.icon2 {
+	width: 30px;
+	height: 30px;
+
+	margin-bottom: 3px;	
+}
+
+.pay_apple {
+	margin-left: 5px;
+
+	font-size: 25px;
+	font-weight: 900;	
+}
+
+.time_right {
+	color: grey;
+	font-size: 20px;
+
+	margin-top: 25px;
+}
+
+.card {
+	color: grey;
+	font-size: 25px;
+
+	margin-top: 25px;
+	padding: 15px 10px;
+
+	border-bottom: 1px solid grey;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	cursor: pointer;
+	transition: .1s linear;
+
+	display: flex;
+	align-items: center;
+}
+
+.card:hover {
+	background-color: lightgrey;
+}
+
+.icon3 {
+	width: 30px;
+	height: 30px;
+
+	margin-right: 15px;
+}
+
+.icon6 {
+	width: 25px;
+	height: 25px;
+
+	padding: 5px;
+	margin-left: 15px;
+
+	background-color: white;
+	border-radius: 5px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.icon6:hover {
+	background-color: darkgrey;
+	color: black;
+}
+
+.icon_card {
+	margin-left: 20px;
+
+	display: flex;
+}
+
+.powered {
+	color: grey;
+	font-size: 20px;
+	font-family: monospace;
+
+	margin-top: 35px;
+	margin-left: 75px;
+}
+
+.surname {
+	color: darkgrey;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+
+	background: linear-gradient(to right, #00aeff, #6200ff);
+
+	display: flex;
+	align-items: center;
+}
+
+.bank {
+	font-size: 40px;
+	font-weight: 900;
+	font-family: monospace;
+
+	margin-left: 0px;
+}
+
+.nav {
+	display: flex;
+
+	margin-left: 400px;
+}
+
+.nav_item {
+	font-size: 20px;
+
+	margin: 0px 20px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.nav_item:hover {
+	color: lightblue;
+	text-decoration: underline;
+}
+
+.basket {
+	font-size: 25px;
+
+	padding: 5px 10px;
+
+	background-color: #817dff;
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.icon1 {
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+footer {
+	width: 100%;
+	height: 10vh;
+
+	background-color: black;
+
+	display: flex;
+	align-items: center;
+}
+
+.cards {
+	margin-left: 100px;
+
+	display: flex;
+}
+
+.icon4 {
+	width: 40px;
+	height: 30px;
+
+	padding: 5px;
+
+	background-color: white;
+	border-radius: 5px;
+}
+
+.cards_item {
+	font-size: 25px;
+	color: darkgrey;
+
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+.nav_footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 800px;
+	margin-bottom: 20px;
+}
+
+.icon5 {
+	width: 25px;
+	height: 25px;
+
+	padding: 5px;
+	margin-left: 15px;
+
+	background-color: white;
+	border-radius: 5px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.icon5:hover {
+	background-color: darkgrey;
+}
+
+.nav_item_footer {
+	margin-left: 25px;
+	margin-bottom: 5px;
+
+	color: darkgrey;
+	font-size: 20px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.nav_item_footer:hover {
+	color: grey;
+}
+
+img {
+	width: 40px;
+	height: 40px;
+}
+
+.icon {
+	margin-left: 150px;
+	margin-right: 25px;
+}
+
+.security_main {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.icon7 {
+	width: 25px;
+	height: 25px;
+}
+
+.complete {
+
+}
+
+.complete_btn {
+	width: 250px;
+	height: 50px;
+
+	background-color: darkgreen;
+	border-radius: 25px;
+	box-shadow: 0 5px 10px #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 25px;
+
+	margin-top: 25px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.complete_btn:hover {
+	background-color: green;
+}
+
+.complete_btn_comeback {
+	width: 250px;
+	height: 50px;
+
+	background-color: darkgreen;
+	border-radius: 25px;
+	box-shadow: 0 5px 10px #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: -50px;
+	margin-left: 250px;
+	margin-right: -500px;
+
+	font-size: 25px;
+	color: white;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.complete_btn_comeback:hover {
+	background-color: green;
+}
+
+.complete_btn_comeback_draw {
+	width: 200px;
+	height: 50px;
+
+	background-color: darkgreen;
+	border-radius: 25px;
+	box-shadow: 0 5px 10px #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 10px;
+	margin-top: 15px;
+
+	font-size: 25px;
+	color: white;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.complete_btn_comeback_draw:hover {
+	background-color: green;
+}
+
+.plate {
+	width: 100%;
+	height: 100vh;
+
+	display: none;
+}
+
+.left_complete {
+	width: 100%;
+	height: 90vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circule {
+	width: 500px;
+	height: 500px;
+
+	border-radius: 50%;
+	background-color: orange;
+	box-shadow: 0 1px 10px #000;
+	border: 5px solid #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+	right: 325px;
+
+	transition: .5s linear;
+}
+
+.row_vertical {
+	width: 100%;
+	height: 30%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row_center {
+	width: 100%;
+	height: 30%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item_1 {
+	width: 150px;
+	height: 150px;
+
+	border-radius: 50%;
+	background-color: red;
+	box-shadow: 0 1px 10px #000;
+
+	cursor: pointer;
+}
+
+.Ptop {
+	position: relative;
+	bottom: 75px;
+
+	font-size: 25px;
+	font-weight: 900;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*background-image: url(./img_cml/2.jpg);
+	background-size: cover;*/
+}
+
+.Pleft {
+	position: relative;
+	right: 75px;
+
+	font-size: 25px;
+	font-weight: 900;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*background-image: url(./img_cml/3.jpg);
+	background-size: cover;*/
+}
+
+.Pright {
+	position: relative;
+	left: 75px;
+
+	font-size: 25px;
+	font-weight: 900;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*background-image: url(./img_cml/1.jpg);
+	background-size: cover;*/
+}
+
+.Pbottom {
+	position: relative;
+	top: 75px;
+
+	font-size: 25px;
+	font-weight: 900;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*background-image: url(./img_cml/4.jpg);
+	background-size: cover;*/
+}
+
+.spin {
+	width: 100%;
+	height: 10vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spin_father {
+	background-color: darkgreen;
+	border-radius: 25px;
+	box-shadow: 0 5px 10px #000;
+
+	padding: 10px 25px;
+
+	position: relative;
+	bottom: 25px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.spin_father:hover {
+	background-color: green;
+}
+
+.spin_text {
+	font-size: 25px;
+	color: white;
+}
+
+.right_complete {
+	width: 900px;
+	height: 575px;
+
+	background-color: grey;
+	border-radius: 25px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	color: white;
+}
+
+.complete_title {
+	font-size: 50px;
+
+	margin-top: 5px;
+}
+
+.discribe {
+	color: lightgrey;
+	font-size: 30px;
+
+	margin-top: 5px;
+}
+
+.dishName {
+	font-size: 25px;
+	font-weight: 900;
+	font-family: monospace;
+	color: black;
+
+	margin-top: 15px;
+}
+
+.dishText {
+	color: black;
+	font-size: 25px;
+
+	/*margin-left: -375px;*/
+}
+
+.dishWeight {
+	color: black;
+	font-size: 20px;
+}
+
+.active {
+	border-radius: 25px;
+	background-color: #303030;
+}
+
+.pizaa_size {
+	display: none;
+
+	border: 1px solid #333;
+	border-radius: 25px;
+	box-shadow: 0 1px 5px #000;
+}
+
+.pizza_size_item {
+	padding: 10px 50px;
+	font-size: 20px;
+
+	cursor: pointer;
+}
+
+.pizza_type {
+	margin-top: 10px;
+}
+
+.row_circule {
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.pizza_type_item {
+	width: 200px;
+
+	border: 1px solid #333;
+	border-radius: 25px;
+	box-shadow: 0 1px 5px #000;
+
+	padding: 10px 0px;
+	padding-left: 25px;
+	margin: 10px;
+
+	font-size: 25px;
+
+	cursor: pointer;
+}
+
+.pizza_complete_btn {
+	display: none;
+
+	margin-top: 25px;
+}
+
+.money_complete {
+	background-color: darkred;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-right: 1px solid #333;
+	box-shadow: 0 1px 10px #000;
+
+	padding: 10px 25px;
+
+	font-size: 25px;
+}
+
+.money_complete_1 {
+	font-size: 30px;
+	font-weight: 900;
+
+	margin-top: 15px;
+}
+
+.rozigrash {
+	width: 250px;
+	height: 50px;
+
+	background-color: darkred;
+	border-radius: 25px;
+	box-shadow: 0 5px 10px #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 25px;
+
+	margin-top: 25px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.rozigrash:hover {
+	background-color: red;
+}
+
+.draw {
+	width: 100%;
+	height: 100vh;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+	bottom: 50px;
+}
+
+.draw_top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.draw_item {
+	width: 250px;
+	height: 300px;
+
+	background-color: darkgrey;
+	border-radius: 15px;
+	border: 2px solid #333;
+
+	margin: 25px 100px;
+}
+
+.draw_item_1 {
+	width: 250px;
+	height: 300px;
+
+	font-size: 28px;
+
+	padding: 10px;
+}
+
+.draw_item_span {
+	font-weight: 900;
+	color: green;
+
+	padding: 5px;
+	margin-left: 35px;
+
+	background-color: whitesmoke;
+	border-radius: 15px;
+}
+
+.draw_item_2 {
+	width: 250px;
+	height: 300px;
+
+	font-size: 20px;
+	font-weight: 900;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	padding: 10px;
+}
+
+.draw_item_text_2 {
+	color: grey;
+}
+
+.questions {
+	font-size: 200px;
+
+	margin-top: 15px;
+}
+
+.draw_item_3 {
+	width: 200px;
+	height: 200px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	padding: 15px;
+}
+
+.draw_item_text_3 {
+	font-size: 29px;
+	font-weight: 900;
+}
+
+.try {
+	font-size: 50px;
+}
+
+.input_draw {
+	width: 300px;
+	height: 50px;
+
+	font-size: 25px;
+
+	margin-left: 40px;
+
+	border-radius: 15px;
+	border: 3px solid #333;
+	background-color: lightgrey;
+}
+
+.draw_btn_save {
+	font-size: 15px;
+	font-weight: 900;
+
+	background-color: green;
+	border-radius: 10px;
+	border: 1px solid #000;
+
+	padding: 10px 50px;
+	margin-top: 25px;
+	margin-left: 40px;
+
+	cursor: pointer;
+	transition: .1s linear;
+}
+
+.draw_btn_save:hover {
+	background-color: darkgreen;
+}
+
+.status {
+	width: 500px;
+	height: 150px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: darkgrey;
+
+	margin-top: 25px;
+	margin-left: 40px;
+	padding: 5px;
+
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.vinner {
+	color: green;
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.draw_title {
+	font-size: 50px;
+	font-weight: 900;
+	color: black;
+
+	margin-top: 75px;
+	padding: 5px 10px;
+
+	background-color: darkgrey;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.draw_span {
+	font-size: 50px;
+	font-weight: 900;
+	color: green;
+
+	background-color: whitesmoke;
+	border-radius: 15px;
+
+	padding: 0px 10px;
+}
+
+.bergaderblu {
+	background-image: url(./img/2.png);
+	background-size: cover;
+}
+
+.feta {
+	background-image: url(./img/1.jpg);
+	background-size: cover;
+}
+
+.parmezan {
+	background-image: url(./img/4.png);
+	background-size: cover;
+}
+
+.mozzarela {
+	background-image: url(./img/3.png);
+	background-size: cover;
+}
+
+.cheder {
+	background-image: url(./img/5.jpg);
+	background-size: cover;
+}
+
+.bacon {
+	background-image: url(./img/6.jpg);
+	background-size: cover;
+}
+
+.bayernkovbaski {
+	background-image: url(./img/7.jpg);
+	background-size: cover;
+}
+
+.chicken {
+	background-image: url(./img/8.jpg);
+	background-size: cover;
+}
+
+.hum {
+	background-image: url(./img/9.jpg);
+	background-size: cover;
+}
+
+.alfredo {
+	background-image: url(./img/10.png);
+	background-size: cover;
+}
+
+.bbq {
+	background-image: url(./img/11.jpg);
+	background-size: cover;
+}
+
+.dominos {
+	background-image: url(./img/12.png);
+	background-size: cover;
+}
+
+.chasnykoviy {
+	background-image: url(./img/13.png);
+	background-size: cover;
+}
+
+.korn {
+	background-image: url(./img/14.jpeg);
+	background-size: cover;
+}
+
+.mushrooms {
+	background-image: url(./img/15.png);
+	background-size: cover;
+}
+
+.olivki {
+	background-image: url(./img/16.jpg);
+	background-size: cover;
+}
+
+.cibula {
+	background-image: url(./img/17.jpg);
+	background-size: cover;
+}
+
+.ananas {
+	background-image: url(./img/18.png);
+	background-size: cover;
+}
+
+.pashalka {
+	background-image: url(./img/18.jpg);
+	background-size: cover;	
+}
